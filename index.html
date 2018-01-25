@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dz15</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<h2>Валютный калькулятор</h2>
+		<span>Я хочу :</span>
+		<input type="radio" name="buy_sell" value="sell" id="button_sell" checked>
+		<label for="button_sell">Продать</label>
+		<div class="chk">
+			<div></div>
+		</div>
+		<input type="radio" name="buy_sell" value="buy" id="button_buy">
+		<label for="button_buy">Купить</label>
+		<input type="number" autofocus placeholder="Введите сумму" id="input_sum">
+		<select name="" id="select_cur">
+			<option value="usd" >usd</option>
+			<option value="euro" selected>euro</option>
+			<option value="rub">rub</option>
+		</select>
+		<button id="calc_curr">Посчитать</button>
+		<span id="final">Итог</span>
+	</main>
+	<script src="script/script.js"></script>
+</body>
+</html>

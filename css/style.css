@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body {
+  font-family: Oswald;
+  margin: 0;
+  padding: 0;
+}
+main {
+  border-radius: 40px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 0;
+  margin: 20px auto;
+  width: 600px;
+  background-color: #324D5C;
+}
+main h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+main span {
+  color: #fff;
+  font-size: 16px;
+}
+#button_sell,
+#button_buy {
+  display: none;
+}
+#button_sell + label,
+#button_buy + label {
+  margin: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 80px;
+  color: #fff;
+  border-radius: 25px;
+  transition: .5s;
+  padding-top: 7px;
+  background-color: #46B29D;
+  display: inline-block;
+  height: 40px;
+  font-size: 16px;
+}
+#button_sell:checked + label,
+#button_buy:checked + label {
+  background-color: #F53855;
+}
+.chk {
+  vertical-align: -14px;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #46B29D;
+  position: relative;
+}
+.chk div {
+  transition: .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F53855;
+}
+.chk .chk1 {
+  left: 40px;
+}
+#select_cur {
+  padding: 0 25px;
+  border-radius: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  vertical-align: 2px;
+  background-color: #F53855;
+  color: #fff;
+  width: 80px;
+  height: 40px;
+}
+#select_cur option:checked {
+  display: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin: 0 10px;
+  outline: none;
+  width: 140px;
+  height: 40px;
+}
+button {
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 40px;
+  background-color: #F53855;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+}
+button:hover {
+  cursor: pointer;
+}
+#final {
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+.active_calc {
+  border: 1px solid black;
+}
